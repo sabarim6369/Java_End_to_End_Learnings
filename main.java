@@ -1,5 +1,7 @@
-import tools.Calc;
 
+import Interthreadcommunication.Sharedresource;
+import Interthreadcommunication.Consumer;
+import Interthreadcommunication.Producer;
 public class main {
     public static void main(String[] args) {
         Sharedresource s=new Sharedresource();

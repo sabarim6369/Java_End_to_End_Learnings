@@ -1,14 +1,16 @@
+package Interthreadcommunication;
+
 public class Sharedresource {
     private int data;
     private boolean havedata=false;
-    Sharedresource() {
+    public Sharedresource() {
         this.data = 0;
     }
     public synchronized void produce(){
         while(havedata){
-           try{
-               wait();
-           }catch(Exception e){}
+            try{
+                wait();
+            }catch(Exception e){}
         }
         data++;
         System.out.println("Produced"+data);

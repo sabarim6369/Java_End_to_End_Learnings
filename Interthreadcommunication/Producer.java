@@ -1,6 +1,8 @@
+package Interthreadcommunication;
+
 public class Producer extends Thread{
     private Sharedresource shared;
-    Producer(Sharedresource s){
+    public Producer(Sharedresource s){
         shared=s;
     }
     @Override
