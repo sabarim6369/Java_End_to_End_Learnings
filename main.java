@@ -1,4 +1,5 @@
 
+import Callable.work1;
 import Interthreadcommunication.Sharedresource;
 import Interthreadcommunication.Consumer;
 import Interthreadcommunication.Producer;
@@ -33,7 +34,13 @@ public class main {
 //        a.executorservicemethod();
 //        Bookingmain a=new Bookingmain();
 //        a.bookticket();
-        Car carobj=new Car();
-        carobj.startfun();
-    }
+//        Car carobj=new Car();
+//        carobj.startfun();
+        work1 w=new work1();
+        try {
+            w.fun();
+        }
+        catch (Exception e){}
+        }
+
 }
