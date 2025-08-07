@@ -17,7 +17,7 @@ public class Parking {
                return i;
            }
        }
-       return -1; //
+       return -1;
    }
    public synchronized void leavecar(int slot){
        if(slot>0 && slot<slots.length && slots[slot]){

@@ -1,5 +1,7 @@
 
 import Callable.work1;
+import DesignPatterns.Creationaldesignpattern.Factorialdesignpattern.Factory;
+import DesignPatterns.Creationaldesignpattern.Factorialdesignpattern.Ticket;
 import Interthreadcommunication.Sharedresource;
 import Interthreadcommunication.Consumer;
 import Interthreadcommunication.Producer;
@@ -11,6 +13,9 @@ import ThreadPool.Executorservice1;
 import ThreadPool.Executorserviceclass;
 import TicketBooking.Bookingmain;
 import ParkingLot.Car;
+
+import static DesignPatterns.Creationaldesignpattern.Factorialdesignpattern.Factory.getticket;
+
 public class main {
     public static void main(String[] args) {
 //        Sharedresource s=new Sharedresource();
@@ -36,11 +41,18 @@ public class main {
 //        a.bookticket();
 //        Car carobj=new Car();
 //        carobj.startfun();
-        work1 w=new work1();
-        try {
-            w.fun();
-        }
-        catch (Exception e){}
+//        work1 w=new work1();
+//        try {
+//            w.fun();
+//        }
+//        catch (Exception e){}
+        Ticket ticket=Factory.getticket("movie");
+        Ticket busticker=Factory.getticket("bus");
+        Ticket trainticket=Factory.getticket("train");
+        ticket.book();
+        busticker.book();
+        trainticket.book();
+
         }
 
 }
