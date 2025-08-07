@@ -2,6 +2,7 @@
 import Callable.work1;
 import DesignPatterns.Creationaldesignpattern.Factorialdesignpattern.Factory;
 import DesignPatterns.Creationaldesignpattern.Factorialdesignpattern.Ticket;
+import DesignPatterns.Structuraldesignpattern.Adaptor.Main;
 import Interthreadcommunication.Sharedresource;
 import Interthreadcommunication.Consumer;
 import Interthreadcommunication.Producer;
@@ -46,12 +47,15 @@ public class main {
 //            w.fun();
 //        }
 //        catch (Exception e){}
-        Ticket ticket=Factory.getticket("movie");
-        Ticket busticker=Factory.getticket("bus");
-        Ticket trainticket=Factory.getticket("train");
-        ticket.book();
-        busticker.book();
-        trainticket.book();
+//        Ticket ticket=Factory.getticket("movie");
+//        Ticket busticker=Factory.getticket("bus");
+//        Ticket trainticket=Factory.getticket("train");
+//        ticket.book();
+//        busticker.book();
+//        trainticket.book();
+        Main a=new Main();
+        a.mainclass();
+
 
         }
 
